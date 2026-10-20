@@ -1,0 +1,111 @@
+{
+    // Typing shortcuts for LaTeX files in this project. Type a prefix (e.g. "align"),
+    // pick it from the suggestion list with Enter/Tab, then press Tab to jump
+    // between the $1, $2, ... placeholders.
+    "Align* Environment": {
+        "scope": "latex",
+        "prefix": "align",
+        "body": [
+            "\\begin{align*}",
+            "\t$1 & $2",
+            "\\end{align*}"
+        ],
+        "description": "Create an align* environment"
+    },
+    "Add Comment to Line": {
+        "scope": "latex",
+        "prefix": "comm",
+        "body": [
+            "\\quad \\textit{($1)}"
+        ],
+        "description": "Add a comment to the current line in an align block"
+    },
+    "Differentiate": {
+        "scope": "latex",
+        "prefix": "dx",
+        "body": [
+            "\\frac{d}{d${1:x}}"
+        ],
+        "description": "Add the differentiation symbol"
+    },
+    "Fraction": {
+        "scope": "latex",
+        "prefix": "frac",
+        "body": [
+            "\\frac{$1}{$2}"
+        ],
+        "description": "Insert a fraction"
+    },
+    "Equation Environment": {
+        "scope": "latex",
+        "prefix": "eq",
+        "body": [
+            "\\begin{equation}",
+            "\t$1",
+            "\\end{equation}"
+        ],
+        "description": "Create an equation environment"
+    },
+    "Quote": {
+        "scope": "latex",
+        "prefix": "quote",
+        "body": [
+            "\\begin{quote}",
+            "\t\\textbf{Problem:} $1",
+            "\\end{quote}"
+        ],
+        "description": "Create a quote-style problem statement"
+    },
+    "Problem": {
+        "scope": "latex",
+        "prefix": "problem",
+        "body": [
+            "\\begin{tcolorbox}[",
+            "\tcolback=blue!5,",
+            "\tcolframe=blue!75!black,",
+            "\ttitle=\\textbf{Problem},",
+            "\tfonttitle=\\large,",
+            "\tarc=2mm",
+            "]",
+            "\t$1",
+            "\\end{tcolorbox}"
+        ],
+        "description": "Create a style problem statement"
+    },
+    "Instructions": {
+        "scope": "latex",
+        "prefix": "instructions",
+        "body": [
+            "\\begin{tcolorbox}[",
+            "\tcolback=black!5,",
+            "\tcolframe=black!75!black,",
+            "\ttitle=\\textbf{Instructions},",
+            "\tfonttitle=\\large,",
+            "\tarc=2mm",
+            "]",
+            "\t$1",
+            "\\end{tcolorbox}"
+        ],
+        "description": "Create a style instructions statement"
+    },
+    "Red": {
+        "scope": "latex",
+        "prefix": "red",
+        "body": [
+            "\\textbf{\\color{red}$1}"
+        ],
+        "description": "Leave a comment in red"
+    },
+    "Image": {
+        "scope": "latex",
+        "prefix": "image",
+        "body": [
+            "\\begin{figure}[H]",
+            "\t\\centering",
+            "\t\\includegraphics[width=${1:\\textwidth}]{./assets/$2}",
+            "\t\\caption{$3}",
+            "\\end{figure}"
+        ],
+        "description": "Insert a centered figure with an image and caption"
+    }
+}

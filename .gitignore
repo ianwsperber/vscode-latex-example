@@ -1,0 +1,34 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.xdv
+*.run.xml
+*.bcf
+
+# PDFs: ignore everything except the compiled assignment
+*.pdf
+!tex/main.pdf
+
+# Editor/OS
+.DS_Store
+
+# VS Code workspace files (except the ones we want)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/latex.code-snippets

@@ -1,0 +1,32 @@
+\subsection*{(b)}
+
+\begin{tcolorbox}[
+    colback=blue!5,
+    colframe=blue!75!black,
+    title=\textbf{Problem: Chain Rule in Integration},
+    fonttitle=\large,
+    arc=2mm
+]
+    Evaluate the integral using the chain rule (i.e., \(u\)-substitution):
+
+    \begin{align*}
+        \int (3x^{2} - 4x)\, e^{\,x^{3} - 2x^{2}} \, \dd x
+    \end{align*}
+
+\end{tcolorbox}
+
+We look for an inner function whose derivative appears as a factor.
+
+\begin{align*}
+    u & = x^{3} - 2x^{2} \\
+    \dd u & = (3x^{2} - 4x)\, \dd x
+\end{align*}
+
+The differential \(\dd u\) exactly matches the factor in front of \(e^{u}\), so the integral collapses to:
+
+\begin{align*}
+    \int (3x^{2} - 4x)\, e^{\,x^{3} - 2x^{2}} \, \dd x
+    & = \int e^{u} \, \dd u \\
+    & = e^{u} + C \\
+    & = \boxed{e^{\,x^{3} - 2x^{2}} + C}
+\end{align*}

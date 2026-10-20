@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\setlength{\headheight}{14.5pt}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{parskip} % for spacing between paragraphs
+\usepackage{ulem} % for underlining
+\usepackage{tikz}
+\usepackage{tcolorbox} % for boxing problem statements
+
+\geometry{margin=1in}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ian Smartypants}
+\lhead{CLASS101 - TMA00}
+\rfoot{\thepage}
+
+% Title Info
+\title{CLASS101 - TMA00}
+\author{Ian Smartypants}
+\date{\today}
+
+% Macros
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dx}{\,\mathrm{d}x}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\der}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+\begin{document}
+\maketitle
+
+\section*{Question 1}
+\input{./problems/problem1}
+
+\section*{Question 2}
+\input{./problems/problem2}
+
+\end{document}
